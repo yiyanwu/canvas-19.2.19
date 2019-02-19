@@ -1,0 +1,80 @@
+ul,ol{list-style: none;}
+*{margin: 0;padding: 0;}
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+#canvas{
+    display: block;
+}
+body{
+  margin:0;
+}
+.actions{
+  position:fixed;
+  left:0;
+  top:0;
+  padding: 10px 10px;
+}
+.actions > svg{
+  width: 1.5em;
+  height: 1.5em;
+  transition: all 0.3s;
+  margin: 0 10px;
+}
+.actions > svg.active{
+  fill:red;
+  transform: scale(1.2);
+}
+.colors{
+  position: fixed;
+  left: 20px;
+  top: 40px;
+}
+.colors >li{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px 0;
+  transition: all 0.3s
+}
+.colors .black{
+  background: black;
+}
+.colors .red{
+  background: red;
+}
+.colors .green{
+  background: green;
+}
+.colors .blue{
+  background: blue;
+}
+.colors >li.active{
+  box-shadow: 0px 0px 2px 2px rgba(120,212,219,1);
+}
+.thickness{
+  position: fixed;
+  right: 20px;
+  top: 5px;
+}
+.thickness >li{
+  margin: 20px 0;
+}
+.thickness .fine{
+  width: 20px;
+  height: 0px;
+  border-top: 2px solid black;
+}
+.thickness .crude{
+  width: 20px;
+  height: 0px;
+  border-top: 5px solid black;
+}
+.thickness .thick{
+  width: 20px;
+  height: 0px;
+  border-top: 8px solid black;
+}
