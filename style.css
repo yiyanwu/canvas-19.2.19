@@ -7,10 +7,10 @@ ul,ol{list-style: none;}
   overflow: hidden;
 }
 #canvas{
-    display: block;
+  display: block;
 }
 body{
-  margin:0;
+  overflow: hidden;
 }
 .actions{
   position:fixed;
